@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+   <head>
+      <title>Student Bank</title>
+      <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='CSS/indexstyle.css') }}">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <div class="container">
+        <div class = "img">
+          <img src="/static/vault.svg" alt="vault">
+        </div>
+        <div class="selection">
+          <form action="/studentlogin/null" method="post">
+              <input type="submit" class="stbtn" value="STUDENT" name="student_button">
+              <input type="submit" formaction="/adminlogin/null" class="adbtn" value="ADMIN" name="admin_button">
+          </form>
+        </div>
+      </div>
+   </body>
+</html>

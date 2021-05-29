@@ -1,0 +1,92 @@
+@font-face {
+    font-family: Poppins;
+    src:url("../FONTS/Poppins-Regular.ttf");
+}
+
+*{
+	padding: 0;
+	margin: 0 auto;
+	box-sizing: border-box;
+	font-family: Poppins;
+	text-align: center;
+	position: relative;
+}
+
+html, body{
+	
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 255px;
+    color: #95a5a6;
+    font-size: 1em;
+    border:1px solid #ecf0f1;
+    background:#ecf0f1;
+    padding:5px;
+}
+
+input[type="date"], focus {
+    color: #95a5a6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+.topbar h1{
+	font-size: 3em;
+}
+
+.info h2, .filter, .Transaction{
+	font-size: 2em;
+}
+
+.TxID{
+	font-size: 1em;
+	width:255px;
+}
+.Transaction{
+	padding: 2px;
+	margin: 20px;
+}
+button{
+	display: block;
+	width: 50%;
+	height: 50px;
+	left: 25%;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+
+button:hover{
+	background-position: right;
+}
+
+@media screen and (max-width: 900px){
+	.Transaction{
+		font-size: 1em;
+	}
+	.filter{
+		width: 75%;
+	}
+}

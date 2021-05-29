@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+   <head>
+      <title>Waste Segregator</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/resultstyle.css') }}">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <div class = "info">
+         <form action="/" class="infoform">
+            <div class="Transaction">
+            <table border = 1>
+               <thead>
+                  <td>Item Type</td>
+                  <td>Degradability</td>
+                  <td>Count</td>
+               </thead>
+
+               {% for row in rows %}
+               <tr>
+                  <td>{{row["Type"]}}</td>
+                  <td>{{row["Degradability"]}}</td>
+                  <td>{{row["Count"]}}</td>
+               </tr>
+               {% endfor %}
+            </table> 
+            </div><br /><br />
+            <button type="submit" name = "Homebtn" class="Homebtn">HOME</button>
+         </form>
+      </div>
+   </body>
+</html>

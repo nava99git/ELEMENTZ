@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Poppins;
+    src:url("../FONTS/Poppins-Regular.ttf");
+}
+
+*{
+	font-family: Poppins;
+}
+
+body{
+	
+}
+
+.info{
+	top:50%;
+	left: 50%;
+	transform: translateY(50%);
+	width: 100%;
+}
+
+thead{
+	font-size: 2em;
+}
+
+tr{
+	font-size: 1.5em;
+}
+
+.Transaction, table{
+	margin: 0 auto;
+}
+.Homebtn{
+	display: block;
+	width: 350px;
+	height: 100px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-size: 200%;
+	font-size: 3rem;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0 auto;
+	cursor: pointer;
+	transition: .5s;
+}
+.Homebtn:hover{
+	background-position: right;
+}
+
+@media screen and (max-width: 900px){
+	thead{
+		font-size: 1.5em;	
+	}
+
+	tr{
+		font-size: 1em;
+	}
+	.info{
+		transform: translateY(100%);
+	}
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+   <head>
+      <title>Add New</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/updata.css') }}">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+	  <form action="/admindashboard">
+		  <button name="dashboard" type="submit">Go To Dashboard</button>
+	  </form>
+      <h2>Update Form</h2>
+      <div class="details">
+		  <form action="/admindashboard/updatedata/update" method="post">
+			  Enter ID: <div class="underline"><input type="number" name="ID" required></div>  <br />
+			  Field to update
+			  <select name = "toupdate">
+				 <option value = "null">Select</option>
+				 <option value = "RFID">RFID</option>
+				 <option value = "NAME">Name</option>
+				 <option value = "PIN">Pin</option>
+				 <option value = "Amount">Amount</option>
+				 <option value = "DISABLED">Disabled</option>
+				 <option value = "BLOCKED">Blocked</option>
+			  </select> : <div class="underline"><input type="text" name="valueupdate" value = 0 /></div> <br />
+			  <button type="submit" name= "form">SUBMIT</button>
+		  </form>
+      </div>
+      <p1 name = 'Error'>{{ Error }}</p1>
+   </body>
+</html>

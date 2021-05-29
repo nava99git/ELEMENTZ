@@ -1,0 +1,52 @@
+@font-face {
+    font-family: Poppins;
+    src:url("../FONTS/Poppins-Regular.ttf");
+}
+
+*{
+	font-family: Poppins;
+}
+
+body{
+	
+}
+
+.parent{
+	position: relative;
+}
+.container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 125%);
+}
+
+.Startbtn{
+	display: block;
+	width: 350px;
+	height: 200px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-size: 200%;
+	font-size: 3rem;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+.Startbtn:hover{
+	background-position: right;
+}
+
+@media screen and (max-width: 900px){
+	.container{
+		
+	}
+
+	.Startbtn{
+		
+	}
+}

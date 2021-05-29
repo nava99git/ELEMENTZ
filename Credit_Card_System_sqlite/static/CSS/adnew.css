@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Poppins;
+    src:url("../FONTS/Poppins-Regular.ttf");
+}
+
+*{
+	padding: 0;
+	margin: 0 auto;
+	box-sizing: border-box;
+	font-family: Poppins;
+	text-align: center;
+	position: relative;
+}
+
+html, body{
+	
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+h2{
+	font-size: 2em;
+}
+
+.details{
+	width: 300px;
+	text-align: left;
+}
+
+.details form input{
+	width:100%
+}
+
+input{
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	
+	font-size: 1.2rem;
+	color: #555;
+}
+
+.underline{
+	border-bottom: 2px solid #d9d9d9;
+}
+
+form{
+	font-size: 2em;
+}
+p1{
+	font-size: 1.6em;
+}
+button{
+	display: block;
+	width: 50%;
+	height: 50px;
+	left: 25%;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+
+button:hover{
+	background-position: right;
+}
+
+@media screen and (max-width: 900px){
+	h2{
+	font-size: 2em;
+	}
+	form{
+		font-size: 1.6em;
+	}
+	p1{
+		font-size: 1.2em;
+	}
+	input{
+		font-size: 1.2em;
+	}
+}

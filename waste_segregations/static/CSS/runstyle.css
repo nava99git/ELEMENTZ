@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Poppins;
+    src:url("../FONTS/Poppins-Regular.ttf");
+}
+
+*{
+	font-family: Poppins;
+}
+
+body{
+	
+}
+
+/*.parent{
+	position: relative;
+	width: 100%;
+}*/
+.container{
+	/*position: absolute;*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 25%);
+	width: 800px;
+	height: 800px;
+}
+
+.info{
+	font-size: 3em;
+	text-align: center;
+	width: 100%;
+}
+
+.Stopbtn{
+	display: block;
+	width: 350px;
+	height: 100px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-size: 200%;
+	font-size: 3rem;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0 auto;
+	cursor: pointer;
+	transition: .5s;
+}
+.Stopbtn:hover{
+	background-position: right;
+}
+
+@media screen and (max-width: 900px){
+	.container{
+		width: 600px;
+		height: 800px;
+		transform: translate(-50%, 50%);
+	}
+
+	.info{
+		font-size: 1.5em;	
+	}
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Login</title>
+  <link rel="stylesheet" type="text/css" href="../static/studentlogin.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <img class="wave" src="/static/login_wave.png" alt="login_wave">
+  <div class="container">
+    <div class="img">
+      <img src="/static/login_img.svg" alt ="login_img">
+    </div>
+    <div class="login-content">
+      <form action="/studentlogin/check" method="post">
+        <img src="/static/login_avatar.svg" alt = "login_avatar">
+        <h2 class="title">LOGIN</h2>
+              <div class="input-div one">
+                 <div class="i">
+                    <i class="fas fa-user"></i>
+                 </div>
+                 <div class="div">
+                    <h5>Student ID</h5>
+                    <input type="text" class="input" name="Student_ID" required>
+                 </div>
+              </div>
+              <div class="input-div pass">
+                 <div class="i"> 
+                    <i class="fas fa-lock"></i>
+                 </div>
+                 <div class="div">
+                    <h5>PIN</h5>
+                    <input type="password" class="input" name="Pin" required>
+                 </div>
+              </div>
+              <input type="submit" class="btn" value="Login" name="form">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="/static/studentlogin.js"></script>
+</body>
+</html>

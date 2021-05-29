@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+   <head>
+      <title>Change Pin</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/changepin.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome/css/all.css') }}">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <div class="container">
+         <div class="img">
+            <img src="/static/chgpinimage.svg" alt ="chgpinimage">
+         </div>
+         <div class="chgpin-content">
+            <form action="/changepin/check/{{ ID }}" method="post">
+               <h2 class="title">CHANGE YOUR PIN</h2>
+               <div class="input-div one">
+                 <div class="i">
+                    <i class="fas fa-user"></i>
+                 </div>
+                 <div class="div">
+                    <h5></h5>
+                    <input type="text" class = "input" name="StudentID" value = {{ID}} readonly="readonly">
+                 </div>
+               </div>
+               <div class="input-div pass">
+                 <div class="i"> 
+                    <i class="fas fa-lock"></i>
+                 </div>
+                 <div class="div">
+                    <h5>New Pin</h5>
+                    <input type="password" class="input" name="NewPin" required>
+                 </div>
+               </div>
+               <div class="input-div confpass">
+                 <div class="i"> 
+                    <i class="fas fa-lock"></i>
+                 </div>
+                 <div class="div">
+                    <h5>Confirm Pin</h5>
+                    <input type="password" class="input" name="ConfirmPin" required>
+                 </div>
+               </div>
+               <p>{{ Error }}</p>
+               <input type="submit" class="btn" value="SUBMIT" name="form">
+            </form>
+         </div>
+      </div>
+      <script type="text/javascript" src="/static/studentlogin.js"></script>
+   </body>
+</html>

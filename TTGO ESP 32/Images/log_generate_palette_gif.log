@@ -1,0 +1,666 @@
+ffmpeg version 4.3.1-2021-01-01-essentials_build-www.gyan.dev Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Rev5, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      56. 51.100 / 56. 51.100
+  libavcodec     58. 91.100 / 58. 91.100
+  libavformat    58. 45.100 / 58. 45.100
+  libavdevice    58. 10.100 / 58. 10.100
+  libavfilter     7. 85.100 /  7. 85.100
+  libswscale      5.  7.100 /  5.  7.100
+  libswresample   3.  7.100 /  3.  7.100
+  libpostproc    55.  7.100 / 55.  7.100
+Splitting the commandline.
+Reading option '-v' ... matched as option 'v' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument 'C:/Users/Navaneeth Krishnan/AppData/Local/Temp/KritaFFmpegProgress.mWZHhH'.
+Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '24'.
+Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
+Reading option '-i' ... matched as input url with argument 'G:/ELEMENTZ/TTGO ESP 32/Images/frame%04d.png'.
+Reading option '-vf' ... matched as option 'vf' (set video filters) with argument 'palettegen'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option 'G:/ELEMENTZ/TTGO ESP 32/Images/palette.png' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option v (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option progress (write program-readable progress information) with argument C:/Users/Navaneeth Krishnan/AppData/Local/Temp/KritaFFmpegProgress.mWZHhH.
+[file @ 00000160a5b2d740] Setting default whitelist 'file,crypto,data'
+Applying option y (overwrite output files) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url G:/ELEMENTZ/TTGO ESP 32/Images/frame%04d.png.
+Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 24.
+Successfully parsed a group of options.
+Opening an input file: G:/ELEMENTZ/TTGO ESP 32/Images/frame%04d.png.
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0000.png' for reading
+[file @ 00000160a5b71980] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b79b40] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0001.png' for reading
+[file @ 00000160a5fb2340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5fb2480] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0002.png' for reading
+[file @ 00000160a5fb23c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a6035780] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0003.png' for reading
+[file @ 00000160a5fb23c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b71a00] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0004.png' for reading
+[file @ 00000160a5fb23c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b71bc0] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0005.png' for reading
+[file @ 00000160a5fb23c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b71d80] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0006.png' for reading
+[file @ 00000160a5fb23c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b71f40] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0007.png' for reading
+[file @ 00000160a5fb23c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b73100] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0008.png' for reading
+[file @ 00000160a5b73100] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b73200] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0009.png' for reading
+[file @ 00000160a5b73100] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b73200] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000160a5b6e300] Probe buffer size limit of 5000000 bytes reached
+Input #0, image2, from 'G:/ELEMENTZ/TTGO ESP 32/Images/frame%04d.png':
+  Duration: 00:00:05.80, start: 0.000000, bitrate: N/A
+    Stream #0:0, 10, 1/25: Video: png, 1 reference frame, rgba(pc), 591x874 [SAR 3937:3937 DAR 591:874], 0/1, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: output url G:/ELEMENTZ/TTGO ESP 32/Images/palette.png.
+Applying option vf (set video filters) with argument palettegen.
+Successfully parsed a group of options.
+Opening an output file: G:/ELEMENTZ/TTGO ESP 32/Images/palette.png.
+Successfully opened the file.
+detected 8 logical cores
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> png (native))
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 8 times
+[graph 0 input from stream 0:0 @ 00000160a6035700] Setting 'video_size' to value '591x874'
+[graph 0 input from stream 0:0 @ 00000160a6035700] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 0:0 @ 00000160a6035700] Setting 'time_base' to value '1/24'
+[graph 0 input from stream 0:0 @ 00000160a6035700] Setting 'pixel_aspect' to value '3937/3937'
+[graph 0 input from stream 0:0 @ 00000160a6035700] Setting 'frame_rate' to value '24/1'
+[graph 0 input from stream 0:0 @ 00000160a6035700] w:591 h:874 pixfmt:rgba tb:1/24 fr:24/1 sar:3937/3937
+[format @ 00000160a5b71b40] Setting 'pix_fmts' to value 'rgb24|rgba|rgb48be|rgba64be|pal8|gray|ya8|gray16be|ya16be|monob'
+[auto_scaler_0 @ 00000160a5b71d00] Setting 'flags' to value 'bicubic'
+[auto_scaler_0 @ 00000160a5b71d00] w:iw h:ih flags:'bicubic' interl:0
+[Parsed_palettegen_0 @ 00000160a4287600] auto-inserting filter 'auto_scaler_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_palettegen_0'
+[auto_scaler_1 @ 00000160a5b8bc80] Setting 'flags' to value 'bicubic'
+[auto_scaler_1 @ 00000160a5b8bc80] w:iw h:ih flags:'bicubic' interl:0
+[format @ 00000160a5b71b40] auto-inserting filter 'auto_scaler_1' between the filter 'Parsed_palettegen_0' and the filter 'format'
+[AVFilterGraph @ 00000160a66d40c0] query_formats: 4 queried, 1 merged, 2 already done, 0 delayed
+[auto_scaler_1 @ 00000160a5b8bc80] picking rgba out of 10 ref:bgra alpha:1
+[swscaler @ 00000160a66df000] Forcing full internal H chroma due to odd output size
+[swscaler @ 00000160a66df000] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_0 @ 00000160a5b71d00] w:591 h:874 fmt:rgba sar:3937/3937 -> w:591 h:874 fmt:bgra sar:1/1 flags:0x4
+[swscaler @ 00000160a66ebf40] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_1 @ 00000160a5b8bc80] w:16 h:16 fmt:bgra sar:1/1 -> w:16 h:16 fmt:rgba sar:1/1 flags:0x4
+Output #0, image2, to 'G:/ELEMENTZ/TTGO ESP 32/Images/palette.png':
+  Metadata:
+    encoder         : Lavf58.45.100
+    Stream #0:0, 0, 1/24: Video: png, 1 reference frame, rgba, 16x16 [SAR 1:1 DAR 1:1], 0/1, q=2-31, 200 kb/s, 24 fps, 24 tbn, 24 tbc
+    Metadata:
+      encoder         : Lavc58.91.100 png
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 1 times
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0010.png' for reading
+[file @ 00000160a5b9e2c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b88d40] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0011.png' for reading
+[file @ 00000160a7e2b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89400] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0012.png' for reading
+[file @ 00000160a7e2b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89400] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0013.png' for reading
+[file @ 00000160a7e2bc00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b88d40] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0014.png' for reading
+[file @ 00000160a7e2b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b88d40] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0015.png' for reading
+[file @ 00000160a7e2b280] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89400] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0016.png' for reading
+[file @ 00000160a7e2b180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b88d40] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0017.png' for reading
+[file @ 00000160a7e2af00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b88d40] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0018.png' for reading
+[file @ 00000160a7e2b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89000] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0019.png' for reading
+[file @ 00000160a7e2af00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b88d40] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0020.png' for reading
+[file @ 00000160a7e2bc00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b88d40] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0021.png' for reading
+[file @ 00000160a7e2afc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b88d40] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0022.png' for reading
+[file @ 00000160a7e2b180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89400] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0023.png' for reading
+[file @ 00000160a7e2b0c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89140] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0024.png' for reading
+[file @ 00000160a7e2b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89000] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0025.png' for reading
+[file @ 00000160a7e2b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89000] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0026.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89140] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0027.png' for reading
+[file @ 00000160a7e2b6c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b88d40] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0028.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89400] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0029.png' for reading
+[file @ 00000160a7e2b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b88d40] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0030.png' for reading
+[file @ 00000160a7e2b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89400] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0031.png' for reading
+[file @ 00000160a7e2b0c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b88d40] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0032.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89000] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0033.png' for reading
+[file @ 00000160a7e2b6c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b88d40] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0034.png' for reading
+[file @ 00000160a7e2b180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89400] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0035.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89140] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0036.png' for reading
+[file @ 00000160a7e2b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b88d40] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0037.png' for reading
+[file @ 00000160a7e2b280] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89000] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0038.png' for reading
+[file @ 00000160a7e2b180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89400] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0039.png' for reading
+[file @ 00000160a7e2b0c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b88d40] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0040.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89000] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0041.png' for reading
+[file @ 00000160a7e2b6c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89400] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0042.png' for reading
+[file @ 00000160a7e2b180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89400] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0043.png' for reading
+[file @ 00000160a7e2b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89400] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0044.png' for reading
+[file @ 00000160a7e2bb40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89140] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0045.png' for reading
+[file @ 00000160a7e2b980] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89140] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0046.png' for reading
+[file @ 00000160a7e2b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b88d40] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0047.png' for reading
+[file @ 00000160a7e2b880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b88d40] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0048.png' for reading
+[file @ 00000160a7e2b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b88d40] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0049.png' for reading
+[file @ 00000160a7e2afc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89000] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0050.png' for reading
+[file @ 00000160a7e2b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89400] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0051.png' for reading
+[file @ 00000160a7e2ae00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89000] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0052.png' for reading
+[file @ 00000160a7e2b6c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b88d40] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0053.png' for reading
+[file @ 00000160a7e2b180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89400] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0054.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89140] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0055.png' for reading
+[file @ 00000160a7e2af00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b89000] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0056.png' for reading
+[file @ 00000160a7e2bc00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a5b88d40] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0057.png' for reading
+[file @ 00000160a7e2bb40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658dec0] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0058.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658e000] Statistics: 766709 bytes read, 0 seeks
+frame=    0 fps=0.0 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0059.png' for reading
+[file @ 00000160a7e2b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658c200] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0060.png' for reading
+[file @ 00000160a7e2b180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658c480] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0061.png' for reading
+[file @ 00000160a7e2b180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658b780] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0062.png' for reading
+[file @ 00000160a7e2b880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658cdc0] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0063.png' for reading
+[file @ 00000160a7e2ae00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658ba00] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0064.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658d300] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0065.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658cc80] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0066.png' for reading
+[file @ 00000160a7e2b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658c480] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0067.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658be00] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0068.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658c5c0] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0069.png' for reading
+[file @ 00000160a7e2bb40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658cdc0] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0070.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658d300] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0071.png' for reading
+[file @ 00000160a7e2b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658f280] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0072.png' for reading
+[file @ 00000160a7e2b7c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658c480] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0073.png' for reading
+[file @ 00000160a7e2af00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658f500] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0074.png' for reading
+[file @ 00000160a7e2bb40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658d580] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0075.png' for reading
+[file @ 00000160a7e2b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658c880] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0076.png' for reading
+[file @ 00000160a7e2b0c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658cdc0] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0077.png' for reading
+[file @ 00000160a7e2ae00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658cc80] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0078.png' for reading
+[file @ 00000160a7e2b280] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658d300] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0079.png' for reading
+[file @ 00000160a7e2b980] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658d840] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0080.png' for reading
+[file @ 00000160a7e2ae00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658c880] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0081.png' for reading
+[file @ 00000160a7e2b880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658dec0] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0082.png' for reading
+[file @ 00000160a7e2b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658dec0] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0083.png' for reading
+[file @ 00000160a7e2b280] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658c200] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0084.png' for reading
+[file @ 00000160a7e2b280] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658f140] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0085.png' for reading
+[file @ 00000160a7e2b0c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658e000] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0086.png' for reading
+[file @ 00000160a7e2b180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658ba00] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0087.png' for reading
+[file @ 00000160a7e2bb40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658dec0] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0088.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658e000] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0089.png' for reading
+[file @ 00000160a7e2b980] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658e6c0] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0090.png' for reading
+[file @ 00000160a7e2ae00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658f140] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0091.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658c200] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0092.png' for reading
+[file @ 00000160a7e2bb40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658dec0] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0093.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658e000] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0094.png' for reading
+[file @ 00000160a7e2b980] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658e6c0] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0095.png' for reading
+[file @ 00000160a7e2ae00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658f140] Statistics: 766709 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0096.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658c200] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0097.png' for reading
+[file @ 00000160a7e2b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658c880] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0098.png' for reading
+[file @ 00000160a7e2b0c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658d300] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0099.png' for reading
+[file @ 00000160a7e2b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658bf40] Statistics: 526381 bytes read, 0 seeks
+frame=    0 fps=0.0 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0100.png' for reading
+[file @ 00000160a7e2bc00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658f280] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0101.png' for reading
+[file @ 00000160a7e2bb40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658e000] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0102.png' for reading
+[file @ 00000160a7e2bb40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658ec00] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0103.png' for reading
+[file @ 00000160a7e2b6c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658e000] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0104.png' for reading
+[file @ 00000160a7e2b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a658bcc0] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0105.png' for reading
+[file @ 00000160a7e2b180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a88187c0] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0106.png' for reading
+[file @ 00000160a7e2bc00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8818a80] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0107.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8819100] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0108.png' for reading
+[file @ 00000160a7e2afc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a881ab40] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0109.png' for reading
+[file @ 00000160a7e2ae00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8819640] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0110.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8818280] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0111.png' for reading
+[file @ 00000160a7e2b0c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8818bc0] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0112.png' for reading
+[file @ 00000160a7e2b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a881ac80] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0113.png' for reading
+[file @ 00000160a7e2bc00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8818bc0] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0114.png' for reading
+[file @ 00000160a7e2bb40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a881adc0] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0115.png' for reading
+[file @ 00000160a7e2b980] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8818280] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0116.png' for reading
+[file @ 00000160a7e2b180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8817940] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0117.png' for reading
+[file @ 00000160a7e2b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8817940] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0118.png' for reading
+[file @ 00000160a7e2b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8818680] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0119.png' for reading
+[file @ 00000160a7e2b0c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8818a80] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0120.png' for reading
+[file @ 00000160a7e2b6c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8819640] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0121.png' for reading
+[file @ 00000160a7e2afc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8819cc0] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0122.png' for reading
+[file @ 00000160a7e2ae00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a881a0c0] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0123.png' for reading
+[file @ 00000160a7e2b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8819100] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0124.png' for reading
+[file @ 00000160a7e2bc00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8817d40] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0125.png' for reading
+[file @ 00000160a7e2b880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8819b80] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0126.png' for reading
+[file @ 00000160a7e2b600] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a88172c0] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0127.png' for reading
+[file @ 00000160a7e2bb40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8818540] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0128.png' for reading
+[file @ 00000160a7e2ba40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a881a880] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0129.png' for reading
+[file @ 00000160a7e2b0c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8819640] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0130.png' for reading
+[file @ 00000160a7e2b280] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8817580] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0131.png' for reading
+[file @ 00000160a7e2b180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8817c00] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0132.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8818bc0] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0133.png' for reading
+[file @ 00000160a7e2b6c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8818000] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0134.png' for reading
+[file @ 00000160a7e2b500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8817180] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0135.png' for reading
+[file @ 00000160a7e2bc00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8817ac0] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0136.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8818fc0] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0137.png' for reading
+[file @ 00000160a7e2b6c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8817c00] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0138.png' for reading
+[file @ 00000160a7e2b180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8818bc0] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0139.png' for reading
+[file @ 00000160a7e2bb40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a881ac80] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0140.png' for reading
+[file @ 00000160a7e2b440] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a88187c0] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0141.png' for reading
+[file @ 00000160a7e2bc00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a881a600] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0142.png' for reading
+[file @ 00000160a7e2b340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8819e00] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0143.png' for reading
+[file @ 00000160a7e2b6c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8819640] Statistics: 526381 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000160a5b6e300] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0144.png' for reading
+[file @ 00000160a7e2afc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a8819780] Statistics: 607890 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 8 times
+[Parsed_palettegen_0 @ 00000160a4287600] 255(+1) colors generated out of 127288 colors; ratio=0.002003
+cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+Clipping frame in rate conversion by 0.000008
+frame=    1 fps=0.6 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[out_0_0 @ 00000160a5b71ec0] EOF on sink link out_0_0:default.
+No more output streams to write to, finishing.
+[image2 @ 00000160a5b6ff80] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/palette.png' for writing
+[file @ 00000160a7e2bc00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000160a63fbb00] Statistics: 0 seeks, 1 writeouts
+frame=    1 fps=0.6 q=-0.0 Lsize=N/A time=00:00:00.04 bitrate=N/A speed=0.0258x    
+[AVIOContext @ 00000160a5b6e1c0] Statistics: 0 seeks, 4 writeouts
+video:1kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+Input file #0 (G:/ELEMENTZ/TTGO ESP 32/Images/frame%04d.png):
+  Input stream #0:0 (video): 145 packets read (88238946 bytes); 145 frames decoded; 
+  Total: 145 packets (88238946 bytes) demuxed
+Output file #0 (G:/ELEMENTZ/TTGO ESP 32/Images/palette.png):
+  Output stream #0:0 (video): 1 frames encoded; 1 packets muxed (1007 bytes); 
+  Total: 1 packets (1007 bytes) muxed
+145 frames successfully decoded, 0 decoding errors

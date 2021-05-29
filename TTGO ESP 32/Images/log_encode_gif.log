@@ -1,0 +1,693 @@
+ffmpeg version 4.3.1-2021-01-01-essentials_build-www.gyan.dev Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.2.0 (Rev5, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      56. 51.100 / 56. 51.100
+  libavcodec     58. 91.100 / 58. 91.100
+  libavformat    58. 45.100 / 58. 45.100
+  libavdevice    58. 10.100 / 58. 10.100
+  libavfilter     7. 85.100 /  7. 85.100
+  libswscale      5.  7.100 /  5.  7.100
+  libswresample   3.  7.100 /  3.  7.100
+  libpostproc    55.  7.100 / 55.  7.100
+Splitting the commandline.
+Reading option '-v' ... matched as option 'v' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument 'C:/Users/Navaneeth Krishnan/AppData/Local/Temp/KritaFFmpegProgress.IBRwel'.
+Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '24'.
+Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
+Reading option '-i' ... matched as input url with argument 'G:/ELEMENTZ/TTGO ESP 32/Images/frame%04d.png'.
+Reading option '-i' ... matched as input url with argument 'G:/ELEMENTZ/TTGO ESP 32/Images/palette.png'.
+Reading option '-lavfi' ... matched as option 'lavfi' (create a complex filtergraph) with argument 'scale=w=592:h=874[0:v];[0:v][1:v] paletteuse'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option 'G:/ELEMENTZ/TTGO ESP 32/Images/out.gif' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option v (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option progress (write program-readable progress information) with argument C:/Users/Navaneeth Krishnan/AppData/Local/Temp/KritaFFmpegProgress.IBRwel.
+[file @ 000002696118e040] Setting default whitelist 'file,crypto,data'
+Applying option lavfi (create a complex filtergraph) with argument scale=w=592:h=874[0:v];[0:v][1:v] paletteuse.
+Applying option y (overwrite output files) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url G:/ELEMENTZ/TTGO ESP 32/Images/frame%04d.png.
+Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 24.
+Successfully parsed a group of options.
+Opening an input file: G:/ELEMENTZ/TTGO ESP 32/Images/frame%04d.png.
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0000.png' for reading
+[file @ 00000269611d2b40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269611dad00] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0001.png' for reading
+[file @ 0000026961652340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961652480] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0002.png' for reading
+[file @ 00000269616523c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269616d5780] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0003.png' for reading
+[file @ 00000269616523c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269611d2bc0] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0004.png' for reading
+[file @ 00000269616523c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269611d2d80] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0005.png' for reading
+[file @ 00000269616523c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269611d2f40] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0006.png' for reading
+[file @ 00000269616523c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269611d4100] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0007.png' for reading
+[file @ 00000269611d4100] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269611d4200] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0008.png' for reading
+[file @ 00000269611d41c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269611d4280] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0009.png' for reading
+[file @ 00000269611d4280] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269611d4340] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000269611ce440] Probe buffer size limit of 5000000 bytes reached
+Input #0, image2, from 'G:/ELEMENTZ/TTGO ESP 32/Images/frame%04d.png':
+  Duration: 00:00:05.80, start: 0.000000, bitrate: N/A
+    Stream #0:0, 10, 1/25: Video: png, 1 reference frame, rgba(pc), 591x874 [SAR 3937:3937 DAR 591:874], 0/1, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: input url G:/ELEMENTZ/TTGO ESP 32/Images/palette.png.
+Successfully parsed a group of options.
+Opening an input file: G:/ELEMENTZ/TTGO ESP 32/Images/palette.png.
+[NULL @ 00000269611d11c0] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/palette.png' for reading
+[file @ 0000026961653300] Setting default whitelist 'file,crypto,data'
+[png_pipe @ 00000269611d11c0] Format png_pipe probed with size=2048 and score=99
+[png_pipe @ 00000269611d11c0] Before avformat_find_stream_info() pos: 0 bytes read:1007 seeks:0 nb_streams:1
+[png_pipe @ 00000269611d11c0] After avformat_find_stream_info() pos: 1007 bytes read:1007 seeks:0 frames:1
+Input #1, png_pipe, from 'G:/ELEMENTZ/TTGO ESP 32/Images/palette.png':
+  Duration: N/A, bitrate: N/A
+    Stream #1:0, 1, 1/25: Video: png, 1 reference frame, rgba(pc), 16x16 [SAR 1:1 DAR 1:1], 0/1, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+[Parsed_scale_0 @ 0000026961758e40] Setting 'w' to value '592'
+[Parsed_scale_0 @ 0000026961758e40] Setting 'h' to value '874'
+[Parsed_scale_0 @ 0000026961758e40] w:592 h:874 flags:'bilinear' interl:0
+Parsing a group of options: output url G:/ELEMENTZ/TTGO ESP 32/Images/out.gif.
+Successfully parsed a group of options.
+Opening an output file: G:/ELEMENTZ/TTGO ESP 32/Images/out.gif.
+[file @ 00000269611e7a40] Setting default whitelist 'file,crypto,data'
+Successfully opened the file.
+detected 8 logical cores
+Stream mapping:
+  Stream #0:0 (png) -> scale
+  Stream #1:0 (png) -> paletteuse:palette
+  paletteuse -> Stream #0:0 (gif)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 152 times
+[image2 @ 00000269611ce440] Thread message queue blocking; consider raising the thread_queue_size option (current value: 8)
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0010.png' for reading
+[file @ 00000269611d4240] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961652200] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0011.png' for reading
+[file @ 00000269611d4240] Setting default whitelist 'file,crypto,data'
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[AVIOContext @ 0000026961652200] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0012.png' for reading
+[file @ 0000026961f67740] Setting default whitelist 'file,crypto,data'
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[AVIOContext @ 0000026961652200] Statistics: 532557 bytes read, 0 seeks
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0013.png' for reading
+[file @ 0000026961f67ac0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961652200] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0014.png' for reading
+[file @ 0000026961f67c80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961e47d80] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0015.png' for reading
+[file @ 0000026961f673c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961e47d80] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0016.png' for reading
+[file @ 0000026961f67580] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961e47d80] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0017.png' for reading
+[file @ 0000026961f67d40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961e47d80] Statistics: 532557 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 1 times
+[Parsed_scale_0 @ 00000269611d2ec0] Setting 'w' to value '592'
+[Parsed_scale_0 @ 00000269611d2ec0] Setting 'h' to value '874'
+[Parsed_scale_0 @ 00000269611d2ec0] w:592 h:874 flags:'bilinear' interl:0
+[graph 0 input from stream 0:0 @ 00000269611d2d00] Setting 'video_size' to value '591x874'
+[graph 0 input from stream 0:0 @ 00000269611d2d00] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 0:0 @ 00000269611d2d00] Setting 'time_base' to value '1/24'
+[graph 0 input from stream 0:0 @ 00000269611d2d00] Setting 'pixel_aspect' to value '3937/3937'
+[graph 0 input from stream 0:0 @ 00000269611d2d00] Setting 'frame_rate' to value '24/1'
+[graph 0 input from stream 0:0 @ 00000269611d2d00] w:591 h:874 pixfmt:rgba tb:1/24 fr:24/1 sar:3937/3937
+[graph 0 input from stream 1:0 @ 0000026961e44740] Setting 'video_size' to value '16x16'
+[graph 0 input from stream 1:0 @ 0000026961e44740] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 1:0 @ 0000026961e44740] Setting 'time_base' to value '1/25'
+[graph 0 input from stream 1:0 @ 0000026961e44740] Setting 'pixel_aspect' to value '1/1'
+[graph 0 input from stream 1:0 @ 0000026961e44740] Setting 'frame_rate' to value '25/1'
+[graph 0 input from stream 1:0 @ 0000026961e44740] w:16 h:16 pixfmt:rgba tb:1/25 fr:25/1 sar:1/1
+[format @ 0000026961e3f040] Setting 'pix_fmts' to value 'rgb8|bgr8|rgb4_byte|bgr4_byte|gray|pal8'
+[auto_scaler_0 @ 0000026961f66ec0] w:iw h:ih flags:'bilinear' interl:0
+[Parsed_paletteuse_1 @ 0000026961652400] auto-inserting filter 'auto_scaler_0' between the filter 'graph 0 input from stream 1:0' and the filter 'Parsed_paletteuse_1'
+[AVFilterGraph @ 00000269611e58c0] query_formats: 6 queried, 4 merged, 1 already done, 0 delayed
+[swscaler @ 0000026961233080] Forcing full internal H chroma due to input having non subsampled chroma
+[Parsed_scale_0 @ 00000269611d2ec0] w:591 h:874 fmt:rgba sar:3937/3937 -> w:592 h:874 fmt:bgra sar:591/592 flags:0x2
+[swscaler @ 0000026961d75fc0] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_0 @ 0000026961f66ec0] w:16 h:16 fmt:rgba sar:1/1 -> w:16 h:16 fmt:bgra sar:1/1 flags:0x2
+[Parsed_paletteuse_1 @ 0000026961652400] [framesync @ 000002696227a748] Selected 1/600 time base
+[Parsed_paletteuse_1 @ 0000026961652400] [framesync @ 000002696227a748] Sync level 2
+Output #0, gif, to 'G:/ELEMENTZ/TTGO ESP 32/Images/out.gif':
+  Metadata:
+    encoder         : Lavf58.45.100
+    Stream #0:0, 0, 1/100: Video: gif, 1 reference frame, pal8, 592x874 [SAR 591:592 DAR 591:874], 0/1, q=2-31, 200 kb/s, 24 fps, 100 tbn, 24 tbc (default)
+    Metadata:
+      encoder         : Lavc58.91.100 gif
+Clipping frame in rate conversion by 0.000008
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0018.png' for reading
+[file @ 0000026961f68000] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 000002696121fe40] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0019.png' for reading
+[file @ 0000026961216c40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd4c0] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0020.png' for reading
+[file @ 0000026961217340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd600] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0021.png' for reading
+[file @ 0000026961217780] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd600] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0022.png' for reading
+[file @ 0000026961217340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd4c0] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0023.png' for reading
+[file @ 0000026961217340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625ddc80] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0024.png' for reading
+[file @ 0000026961217340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd880] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0025.png' for reading
+[file @ 0000026961216d00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd4c0] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0026.png' for reading
+[file @ 0000026961216c40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd4c0] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0027.png' for reading
+[file @ 0000026961217340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd600] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0028.png' for reading
+[file @ 0000026961217880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0029.png' for reading
+[file @ 00000269612175c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd340] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0030.png' for reading
+[file @ 0000026961217240] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd200] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0031.png' for reading
+[file @ 0000026961217340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd880] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0032.png' for reading
+[file @ 0000026961217340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dddc0] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+frame=   16 fps=0.0 q=-0.0 size=     177kB time=00:00:00.64 bitrate=2268.6kbits/s speed=1.22x    [image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0033.png' for reading
+[file @ 0000026961217080] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625ddc80] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0034.png' for reading
+[file @ 0000026961216ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625ddc80] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0035.png' for reading
+[file @ 0000026961216c40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625ddb40] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0036.png' for reading
+[file @ 0000026961217940] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd200] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0037.png' for reading
+[file @ 0000026961217340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd4c0] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0038.png' for reading
+[file @ 0000026961217780] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625ddc80] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0039.png' for reading
+[file @ 0000026961216ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd600] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0040.png' for reading
+[file @ 00000269612176c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625ddb40] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0041.png' for reading
+[file @ 0000026961217880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd880] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0042.png' for reading
+[file @ 0000026961217500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd0c0] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0043.png' for reading
+[file @ 0000026961216fc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd880] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0044.png' for reading
+[file @ 0000026961217080] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd340] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0045.png' for reading
+[file @ 0000026961217780] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd0c0] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0046.png' for reading
+[file @ 0000026961216fc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dddc0] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0047.png' for reading
+[file @ 00000269612175c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd880] Statistics: 532557 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0048.png' for reading
+[file @ 0000026961216ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0049.png' for reading
+[file @ 00000269612175c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd4c0] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0050.png' for reading
+[file @ 0000026961216d00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625ddb40] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+frame=   34 fps= 33 q=-0.0 size=     178kB time=00:00:01.39 bitrate=1047.1kbits/s speed=1.34x    [image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0051.png' for reading
+[file @ 0000026961216b40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dddc0] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0052.png' for reading
+[file @ 0000026961216fc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dda00] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0053.png' for reading
+[file @ 0000026961216fc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd4c0] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0054.png' for reading
+[file @ 0000026961217240] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd600] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0055.png' for reading
+[file @ 0000026961217180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dddc0] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0056.png' for reading
+[file @ 0000026961217180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dddc0] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0057.png' for reading
+[file @ 0000026961217880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd340] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0058.png' for reading
+[file @ 0000026961217500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dda00] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0059.png' for reading
+[file @ 0000026961216d00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625ddb40] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0060.png' for reading
+[file @ 0000026961216fc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd200] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0061.png' for reading
+[file @ 0000026961217500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd4c0] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0062.png' for reading
+[file @ 0000026961217880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0063.png' for reading
+[file @ 0000026961217500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd200] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0064.png' for reading
+[file @ 0000026961216ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd200] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0065.png' for reading
+[file @ 0000026961216ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd600] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 592x874 image at pos (0;0) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0066.png' for reading
+[file @ 00000269612175c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+frame=   50 fps= 31 q=-0.0 size=     256kB time=00:00:02.05 bitrate=1023.0kbits/s speed=1.28x    [image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0067.png' for reading
+[file @ 00000269623a4880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0068.png' for reading
+[file @ 00000269623a4940] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0069.png' for reading
+[file @ 00000269623a4180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd880] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0070.png' for reading
+[file @ 00000269623a45c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0071.png' for reading
+[file @ 00000269623a4400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0072.png' for reading
+[file @ 00000269623a4880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0073.png' for reading
+[file @ 00000269623a4180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd880] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0074.png' for reading
+[file @ 00000269623a4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0075.png' for reading
+[file @ 00000269623a4340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0076.png' for reading
+[file @ 00000269623a45c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0077.png' for reading
+[file @ 00000269623a4c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0078.png' for reading
+[file @ 00000269623a4b00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0079.png' for reading
+[file @ 00000269623a4780] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+frame=   63 fps= 30 q=-0.0 size=     256kB time=00:00:02.59 bitrate= 809.7kbits/s speed=1.23x    [image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0080.png' for reading
+[file @ 00000269623a4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0081.png' for reading
+[file @ 00000269623a4dc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0082.png' for reading
+[file @ 00000269623a4180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0083.png' for reading
+[file @ 00000269623a4500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0084.png' for reading
+[file @ 00000269623a4a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0085.png' for reading
+[file @ 00000269623a4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0086.png' for reading
+[file @ 00000269623a4940] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0087.png' for reading
+[file @ 00000269623a4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0088.png' for reading
+[file @ 00000269623a4a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0089.png' for reading
+[file @ 00000269623a4340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0090.png' for reading
+[file @ 00000269623a4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0091.png' for reading
+[file @ 00000269623a4340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0092.png' for reading
+[file @ 00000269623a4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+frame=   76 fps= 29 q=-0.0 size=     256kB time=00:00:03.14 bitrate= 667.9kbits/s speed=1.18x    [image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0093.png' for reading
+[file @ 00000269623a4400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0094.png' for reading
+[file @ 00000269623a4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0095.png' for reading
+[file @ 00000269623a4780] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd880] Statistics: 766709 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0096.png' for reading
+[file @ 00000269623a4240] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0097.png' for reading
+[file @ 00000269623a4340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd880] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0098.png' for reading
+[file @ 00000269623a4c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0099.png' for reading
+[file @ 00000269623a4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd880] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0100.png' for reading
+[file @ 00000269623a4500] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0101.png' for reading
+[file @ 00000269623a4240] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0102.png' for reading
+[file @ 00000269623a45c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0103.png' for reading
+[file @ 00000269623a4240] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0104.png' for reading
+[file @ 00000269623a4880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0105.png' for reading
+[file @ 00000269623a4340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+frame=   89 fps= 28 q=-0.0 size=     256kB time=00:00:03.68 bitrate= 569.9kbits/s speed=1.16x    [image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0106.png' for reading
+[file @ 00000269623a4a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd880] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0107.png' for reading
+[file @ 00000269623a4e80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0108.png' for reading
+[file @ 00000269623a4780] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0109.png' for reading
+[file @ 00000269623a4940] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0110.png' for reading
+[file @ 00000269623a4a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd880] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0111.png' for reading
+[file @ 00000269623a4c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0112.png' for reading
+[file @ 00000269623a4340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0113.png' for reading
+[file @ 00000269623a4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 00000269625dd740] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 592x874 image at pos (0;0) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0114.png' for reading
+[file @ 00000269623a4240] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f635c0] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0115.png' for reading
+[file @ 00000269623a4340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f62e00] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0116.png' for reading
+[file @ 00000269623a4b00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f63f00] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0117.png' for reading
+[file @ 00000269623a4780] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f631c0] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0118.png' for reading
+[file @ 00000269623a4180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f635c0] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0119.png' for reading
+[file @ 00000269623a4e80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f63080] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+frame=  103 fps= 28 q=-0.0 size=     768kB time=00:00:04.26 bitrate=1476.9kbits/s speed=1.15x    [image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0120.png' for reading
+[file @ 00000269623a4400] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f631c0] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0121.png' for reading
+[file @ 00000269623a4080] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f63f00] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0122.png' for reading
+[file @ 00000269623a4340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f62e00] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0123.png' for reading
+[file @ 00000269623a46c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f64180] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0124.png' for reading
+[file @ 00000269623a4940] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f64180] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0125.png' for reading
+[file @ 00000269623a4a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f62b40] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0126.png' for reading
+[file @ 00000269623a45c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f63f00] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0127.png' for reading
+[file @ 00000269623a4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f63f00] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0128.png' for reading
+[file @ 00000269623a4080] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f63f00] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0129.png' for reading
+[file @ 00000269623a4080] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f62a00] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0130.png' for reading
+[file @ 00000269623a45c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f62c80] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0131.png' for reading
+[file @ 00000269623a4c00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f63f00] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0132.png' for reading
+[file @ 00000269623a4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f63700] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0133.png' for reading
+[file @ 00000269623a4180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f62a00] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0134.png' for reading
+[file @ 00000269623a4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f635c0] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0135.png' for reading
+[file @ 00000269623a4340] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f63080] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0136.png' for reading
+[file @ 00000269623a4240] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f628c0] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+frame=  120 fps= 28 q=-0.0 size=     768kB time=00:00:04.97 bitrate=1265.9kbits/s speed=1.18x    [image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0137.png' for reading
+[file @ 00000269623a45c0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f628c0] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0138.png' for reading
+[file @ 00000269623a4780] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f63f00] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0139.png' for reading
+[file @ 00000269623a4a40] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f628c0] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0140.png' for reading
+[file @ 00000269623a4780] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f64300] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0141.png' for reading
+[file @ 00000269623a4080] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f635c0] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0142.png' for reading
+[file @ 00000269623a4880] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f631c0] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0143.png' for reading
+[file @ 00000269623a4180] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f62740] Statistics: 526381 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+[image2 @ 00000269611ce440] Opening 'G:/ELEMENTZ/TTGO ESP 32/Images/frame0144.png' for reading
+[file @ 00000269623a4cc0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000026961f63700] Statistics: 607890 bytes read, 0 seeks
+[gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+    Last message repeated 9 times
+frame=  137 fps= 29 q=-0.0 size=     768kB time=00:00:05.68 bitrate=1107.7kbits/s speed= 1.2x    [gif @ 00000269611e6d40] 1x1 image at pos (591;873) [area:592x874]
+    Last message repeated 6 times
+[gif @ 00000269611e6d40] 592x874 image at pos (0;0) [area:592x874]
+[Parsed_paletteuse_1 @ 0000026961652400] [framesync @ 000002696227a748] Sync level 0
+[out_0_0 @ 0000026961e44a00] EOF on sink link out_0_0:default.
+No more output streams to write to, finishing.
+frame=  145 fps= 29 q=-0.0 Lsize=    1012kB time=00:00:06.01 bitrate=1379.5kbits/s speed=1.19x    
+[AVIOContext @ 00000269611ce1c0] Statistics: 0 seeks, 10 writeouts
+video:1012kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.001930%
+Input file #0 (G:/ELEMENTZ/TTGO ESP 32/Images/frame%04d.png):
+  Input stream #0:0 (video): 145 packets read (88238946 bytes); 145 frames decoded; 
+  Total: 145 packets (88238946 bytes) demuxed
+Input file #1 (G:/ELEMENTZ/TTGO ESP 32/Images/palette.png):
+  Input stream #1:0 (video): 1 packets read (1007 bytes); 1 frames decoded; 
+  Total: 1 packets (1007 bytes) demuxed
+Output file #0 (G:/ELEMENTZ/TTGO ESP 32/Images/out.gif):
+  Output stream #0:0 (video): 145 frames encoded; 145 packets muxed (1036311 bytes); 
+  Total: 145 packets (1036311 bytes) muxed
+146 frames successfully decoded, 0 decoding errors
+[AVIOContext @ 00000269611e7b40] Statistics: 0 seeks, 4 writeouts
+[AVIOContext @ 0000026961653400] Statistics: 1007 bytes read, 0 seeks

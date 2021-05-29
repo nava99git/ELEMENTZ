@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+   <head>
+      <title>Add New</title>
+	  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/adnew.css') }}">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+	  <form action="/admindashboard">
+		  <button name="dashboard" type="submit">Go To Dashboard</button>
+	  </form>
+      <h2>Fill Details</h2>
+      <div class="details">
+      <form action="/admindashboard/addnew/add" method="post">
+          RFID: <div class="underline"><input type="number" name="NewRFID" required></div>  <br />
+          Name: <div class="underline"><input type="text" name="NewName" required /></div>  <br /> 
+          Phone: <div class="underline"><input type="number" name="newPhone" required></div>  <br />
+          PIN: <div class="underline"><input type="number" name="NewPin" required /></div>  <br />
+          Amount: <div class="underline"><input type="number" name="NewAmount" required /></div>  <br />
+          <button type="submit" name= "form">Submit</button>
+      </form>
+      </div>
+      <p1 name = 'Error'>{{ Error }}</p1>
+   </body>
+</html>

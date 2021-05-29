@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+   <head>
+      <title>BROWSE</title>
+	  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/browse.css') }}">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+	  <form action="/">
+		  <button class="button" type="submit"><span>Go HOME</span></button>
+	  </form>
+      <h2>Fill Details</h2>
+      <div class="details">
+      <form action="/browse/check" method="post">
+          Checkpoint ID: <div class="underline"><input type="text" name="CID" required></div>  <br />
+          VEHICLE ID: <div class="underline"><input type="text" name="VID"></div>  <br />
+          Start Date: <div class="underline"><input type="date" name="StartDate" required></div> <br />
+          End Date: <div class="underline"><input type="date" name="EndDate"></div><br />        
+          <button class="button" type="submit"><span>SUBMIT</span></button>
+      </form>
+      {% if rows %}
+        <div class="VLIST_Container">
+           <table class = "VLIST">
+           <thead>
+              <td>TIMESTAMP</td>
+              <td>VID</td>
+           </thead>
+           
+           {% for row in rows %}
+              <tr>
+                 <td>{{row["TIMESTAMP"]}}</td>
+                 <td>{{row["VID"]}}</td>
+              </tr>
+           {% endfor %}
+           </table>
+        </div>
+        {% endif %}
+      </div>
+      <p1 name = 'Error'>{{ ERROR }}</p1>
+   </body>
+</html>

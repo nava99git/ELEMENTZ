@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+   <head>
+      <title>{{ title }}</title>
+      <!-- <link rel="stylesheet" href="../static/dashboardstyle.css/"> -->
+   </head>
+   <body>
+      <h1>PLEASE CHANGE PIN</h1>
+      <!-- <form action=url_for('changepin', state = null, ID = {{ ID}}) method="post"> -->
+      <form action="/changepin/check/{{ ID }}" method="post">
+          StudentID: <input type="number" name="StudentID" value = {{ID}} readonly="readonly">  <br />
+          New Pin: <input type="number" name="NewPin" required>  <br />
+          Confirm Pin: <input type="number" name="ConfirmPin" required />
+          <input type="submit" name= "form" value="Submit" />
+      </form>
+      <p1 name = 'Error'>{{ Error }}</p1>
+   </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+   <head>
+      <title>Admin Dashboard</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/admndash.css') }}">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <div class="topbar">
+         <h1>Admin Dashboard</h1>
+         <form action="/adminlogin/null" method = "post">
+		 </form>
+      </div>
+      <div class="pgopt">
+		<form action="/admindashboard/addnew/null" method = "post">
+			<div class="column"><button name="addnew" type="submit">New</button></div>
+			<div class="column"><button type="submit" formaction="/admindashboard/updatedata/null" name = "update">update</button></div>
+         <div class="column"><button type="submit" formaction="/admindashboard/logout" name = "update">Logout</button></div>
+		</form>
+      </div>
+      <div class="filter">
+         <form action="/admindashboard/Transactions" method="post">
+			 ID/RFID: 
+			 <select name = "IDorRFID">
+				<option value = "null">SELECT</option>
+				<option value = "ID">ID</option>
+				<option value = "RFID">RFID</option>
+			 </select> : <div class="underline"><input type="number" name="filterID" value = 0 /></div> <br /> 
+			 Transaction ID: <div class="underline"><input type="number" name="TransactionID" value = 0 /></div> <br />
+			 Start Date: <div class="underline"><input type="date" name="StartDate"></div> <br />
+				End Date: <div class="underline"><input type="date" name="EndDate">  <br /></div>
+         <button name="Generate" type="submit">Generate</button>
+      </form>
+      <p1 name= "Error">{{ Error }}</p1>
+      </div>
+      <div class="Transaction">
+         <table border = 1>
+         <thead>
+            <td>DATE</td>
+            <td>Txn. ID</td>
+            <td>ID</td>
+            <td>RFID</td>
+            <td>Amount Cr.</td>
+            <td>Amount Dr.</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["TxDate"]}}</td>
+               <td>{{row["TxID"]}}</td>
+               <td>{{row["ID"]}}</td>
+               <td>{{row["RFID"]}}</td>
+               <td>{{row["AmtCr"]}}</td>
+               <td>{{row["AmtDr"]}}</td> 
+            </tr>
+         {% endfor %}
+         </table>
+      </div>
+   </body>
+</html>

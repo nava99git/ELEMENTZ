@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+   <head>
+      <title>Student Dashboard</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/stdash.css') }}">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <div class="topbar">
+         <h1>Welcome to Student Bank</h1>
+         <div class = "pgopt">
+            <form action="/changepin/null/{{ ID }}" method="post" class="pgoptform">
+               <button type="submit" name = "ChangePin" class="chgpinbtn">CHANGE PIN</button>
+               <button type="submit" formaction="/studen_dashboard/logout" name = "Logout" class="logoutbtn">Log Out</button>
+            </form>
+         </div>
+         <br />
+      </div>
+      <div class = "info">
+        <h2>
+         Student ID: {{ ID }} </br> 
+         RFID : {{ RFID }}</br>
+         Name : {{ NAME }}</br>
+         Amount : {{ AMOUNT }}</br>
+         Extra Credit: {{ EC }}</br>
+      </h2> 
+      </div><br /><br />
+      <div class="filter">
+         <form action="/student_dashboard/Transactions/{{ ID }}" method="post">
+         Start Date: <input type="date" name="StartDate" class = "sDate">
+         End Date: <input type="date" name="EndDate"  class = "eDate">  <br />
+         Transaction ID: <input type="number" name="TransactionID" class= "TxID" value = 0 /> <br />
+         <button name="Generate" type="submit">Generate</button>
+      </form>
+      <p1 name= "Error">{{ Error }}</p1>
+      </div>
+      <div class="Transaction">
+         <table border = 1>
+         <thead>
+            <td>DATE</td>
+            <td>Txn. ID</td>
+            <td>Amount Cr.</td>
+            <td>Amount Dr.</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["TxDate"]}}</td>
+               <td>{{row["TxID"]}}</td>
+               <td>{{row["AmtCr"]}}</td>
+               <td>{{row["AmtDr"]}}</td> 
+            </tr>
+         {% endfor %}
+         </table>
+      </div>
+   </body>
+</html>
