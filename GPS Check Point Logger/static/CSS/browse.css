@@ -118,7 +118,7 @@ form{
   box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-.VLIST_Container {
+/*.VLIST_Container {
 	box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -165,7 +165,7 @@ form{
 
 .VLIST tr:nth-child(even) {
     background: #f8f8f8;
-}
+}*/
 
 /*@media screen and (max-width: 900px){
 	h2{

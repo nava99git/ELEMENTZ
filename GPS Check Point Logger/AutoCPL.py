@@ -8,23 +8,25 @@ app = Flask(__name__)
 checkpointsDB = 'databases/checkpoints.db'
 buffDB = 'databases/buff.db'
 
-@app.route('/gpsdata', methods = ['POST'])
-def gpsdata():
-	gpsloc = json.loads(request.data)
-	print("VID : %s LAT : %d LONG : %d" % (gpsloc['VID'], gpsloc['lat'], gpsloc['long']))
-	try:
-		conn = sqlite3.connect(buffDB)
-		cur = conn.cursor()
-		cur.execute("SELECT * FROM buffList WHERE VID = '%s'" % (gpsloc['VID']))
-		bufftry = cur.fetchall()
-		if bufftry == None:
-			cur.execute("INSERT INTO buffList VALUES (datetime('now', 'localtime'), '%s' , %d, %d)" % (gpsloc['VID'], gpsloc['lat'], gpsloc['long']))
-		else:
-			cur.execute("UPDATE buffList SET TIMESTAMP = datetime('now', 'localtime') LAT = %d, LONG = %d WHERE VID = '%s'" % (gpsloc['lat'], gpsloc['long'], gpsloc['VID']))
-		conn.commit()
-		conn.close()
-	except:
-		pass
+@app.route('/gpsdata/<VID>/<LAT>/<LNG>', methods = ['POST', 'GET'])
+def gpsdata(VID,LAT,LNG):
+	print("%s : %s : %s"  % (VID,LAT,LNG))
+
+	# try:
+	conn = sqlite3.connect(buffDB)
+	cur = conn.cursor()
+	cur.execute("SELECT VID FROM buffList WHERE VID = '%s'" % (VID))
+	buffVID = cur.fetchone()
+	if buffVID == None:
+		print('New Entry')
+		cur.execute("INSERT INTO buffList VALUES (datetime('now', 'localtime'), '%s' , %s, %s)" % (VID, LAT, LNG))
+	else:
+		print('Update Entry')
+		cur.execute("UPDATE buffList SET TIMESTAMP = datetime('now', 'localtime'), LAT = %s, LONG = %s WHERE VID = '%s'" % (LAT, LNG, VID))
+	conn.commit()
+	conn.close()
+	# except:
+	# 	pass
 	return ''
 
 @app.route('/')
@@ -81,12 +83,12 @@ def browse(state):
 				filtermsg = "WHERE date(TIMESTAMP) BETWEEN '%s' AND '%s'" % (StartDate, EndDate)
 			except:
 				pass
-
-			if VID != '':
+			print(filtermsg)
+			if VID != None:
 				if filtermsg == '':
 					filtermsg = "WHERE VID = '%s'" % (VID)
 				else:
-					filtermsg = " AND VID = '%s'" % (VID)
+					filtermsg += " AND VID = '%s'" % (VID)
 
 			print(filtermsg)
 			cur.execute("SELECT * FROM vehicleList %s" % (filtermsg))
