@@ -1,47 +1,26 @@
 <!DOCTYPE html>
    <head>
       <title>Waste Segregator</title>
-      <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/runstyle.css') }}"> -->
-      <meta http-equiv="refresh" content = "3; url = /run" />
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/runstyle.css') }}">
       <meta name="viewport" content="width=device-width, initial-scale=1">
    </head>
    <body>
-      <!-- <script type="text/javascript">
-         $(document).ready(function() {
-            var xhttp = new XMLHttpRequest();
-            xmlhttp.open('PUT','/run', true);
-            xmlhttp.send();
-         });
-      </script> -->
-      <!-- <div class = "parent"> -->
-         Search: <input type="text" id="search_form_input"></input>
          <div class="container">
-            <div class = "info">
+           <img id = "frame" src = "{{ url_for('run') }}">
+           <input type="button" class="button" id="button" value="STOP" onclick="stop()">
+            <!-- <div class = "info">
                <form action="/result" method="post" class="infoform">
-                  <!-- Item Number : {{ itemno }}<br />Material Type: {{ Type }}<br />Degradability: {{ Degradability }} <br /><br /><br /> -->
-                  <div id = "place_for_info"></div>
+                  <img id = "frame" src = "{{ url_for('run') }}">
                   <button type="submit" name = "Stopbtn" class="Stopbtn">STOP</button>
                </form>
-            </div>
+            </div> -->
          </div>
          <script type="text/javascript" src="{{ url_for('static', filename = 'JS/jquery-3.6.0.min.js')}}"></script>
-         <script type="text/javascript">
-            $("#search_form_input").keyup(function(){
-               var text = $(this).val();
-
-               $.ajax({
-                  url: "/run",
-                  type: "get",
-                  data: {jsdata: text},
-                  success: function(response) {
-                    $("#place_for_info").html(response);
-                  },
-                  error: function(xhr) {
-                    //Do Something to handle error
-                  }
-               });
-            });
+         <script>
+         function stop(){
+           document.getElementById("button").value = "STOPPED";
+         }
          </script>
-      <!-- </div> -->
+      </div>
    </body>
 </html>
