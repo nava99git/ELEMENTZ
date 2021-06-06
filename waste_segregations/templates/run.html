@@ -1,26 +1,20 @@
 <!DOCTYPE html>
-   <head>
-      <title>Waste Segregator</title>
-      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/runstyle.css') }}">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-   </head>
-   <body>
-         <div class="container">
-           <img id = "frame" src = "{{ url_for('run') }}">
-           <input type="button" class="button" id="button" value="STOP" onclick="stop()">
-            <!-- <div class = "info">
-               <form action="/result" method="post" class="infoform">
-                  <img id = "frame" src = "{{ url_for('run') }}">
-                  <button type="submit" name = "Stopbtn" class="Stopbtn">STOP</button>
-               </form>
-            </div> -->
-         </div>
-         <script type="text/javascript" src="{{ url_for('static', filename = 'JS/jquery-3.6.0.min.js')}}"></script>
-         <script>
-         function stop(){
-           document.getElementById("button").value = "STOPPED";
-         }
-         </script>
-      </div>
-   </body>
+
+<head>
+  <title>Waste Segregator</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/runstyle.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="container">
+    <form action="/result" method="post" class="infoform">
+      <img id="frame" src="{{ url_for('run') }}">
+      <button type="submit" name="Stopbtn" class="Stopbtn">STOP</button>
+    </form>
+  </div>
+  <script type="text/javascript" src="{{ url_for('static', filename = 'JS/jquery-3.6.0.min.js')}}"></script>
+  </div>
+</body>
+
 </html>
