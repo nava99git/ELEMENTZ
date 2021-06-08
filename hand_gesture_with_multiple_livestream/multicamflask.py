@@ -1,5 +1,6 @@
 from flask import Flask, render_template, Response
 import cv2
+import hand_gesture_recognition as hgr
 #Initialize the Flask app
 app = Flask(__name__)
 
@@ -15,15 +16,15 @@ def getcam(id):
         if id == 1:
             ret,frame = vid1.read()
             # cv2.imshow('cam', frame1)
-            ret, jpeg = cv2.imencode('.jpg', frame)
-            frame = jpeg.tobytes()
         elif id == 2:
             ret,frame = vid3.read()
             # cv2.imshow('cam', frame3)
-            ret, jpeg = cv2.imencode('.jpg', frame)
-            frame = jpeg.tobytes()
+
 
         if ret:
+            getGesture(frame)
+            ret, jpeg = cv2.imencode('.jpg', frame)
+            frame = jpeg.tobytes()
             yield (b'--frame\r\n'
                 b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
         else:
