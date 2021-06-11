@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dustbin Monitor</title>
+</head>
+
+<body>
+  <div id="STATUS"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    setInterval(function() {
+      $.ajax({
+        url: "/status",
+        type: "get",
+        // data: {jsdata: text},
+        success: function(response) {
+          $("#STATUS").html(response);
+        },
+        error: function(xhr) {
+          //Do Something to handle error
+        }
+      });
+    }, 3000)
+  </script>
+</body>
+
+</html>

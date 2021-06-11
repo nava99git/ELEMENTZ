@@ -1,0 +1,18 @@
+{% if rows %}
+<table border=1 style="width:50%">
+  <thead>
+    <td>Dustbin ID</td>
+    <td>STATUS</td>
+  </thead>
+  {% for row in rows %}
+  <tr>
+    <td style="padding: 15px" >{{ row[0] }}</td>
+    <td>{{ row[1] }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endif %}
+
+{% if error %}
+<<p>{{ error }}</p>
+  {% endif %}
